@@ -42,7 +42,7 @@ Also it is full of customization
 **let notificationView = YZNotificationView(text: "Hi! I am bottom", image: nil, position: .bottomPosition, configuration: config)**  
 **notificationManager.showNotifiationView(notificationView)**  
 
-Find the above displayed examples in the example.
+Find the above displayed examples in the 'YZNotificationViewExample' folder, ViewController.swift file.
 
 ## Instalation
 ### Cocoapods
