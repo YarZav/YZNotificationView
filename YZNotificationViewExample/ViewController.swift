@@ -68,7 +68,16 @@ extension ViewController {
     }
     
     @objc private func showBottomNotificationView() {
-        let notificationView = YZNotificationView(text: "Hi! I am bottom", image: nil, position: .bottomPosition)
+        var config = YZNotificationViewConfig()
+        config.imageViewBackgroundColor = .yellow
+        config.textColor = .red
+        config.textAlignment = .right
+        config.textFont = UIFont.systemFont(ofSize: 17)
+        config.isAutoClose = false
+        config.animationDuration = TimeInterval(0.75)
+        config.displayDuration = TimeInterval(1.75)
+        config.defaultOffset = 10
+        let notificationView = YZNotificationView(text: "Hi! I am bottom", image: nil, position: .bottomPosition, configuration: config)
         self.notificationManager.showNotifiationView(notificationView)
     }
 }
