@@ -192,6 +192,7 @@ extension YZNotificationView {
         }
         
         let leftView = self.image == nil ? self : self.imageView
+        let leftAttribute: NSLayoutConstraint.Attribute = self.image == nil ? .left : .right
         
         if self.image != nil {
             self.imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -205,7 +206,7 @@ extension YZNotificationView {
         self.createConstraint(view: self.label, atribute: .bottom, toView: self,      toAtribute: .bottom).isActive = true
         self.createConstraint(view: self.label, atribute: .top,    toView: self,      toAtribute: .top,   constant: self.getStatusBarHeight()).isActive = true
         self.createConstraint(view: self.label, atribute: .right,  toView: self,      toAtribute: .right, constant: -self.config.defaultOffset).isActive = true
-        self.createConstraint(view: self.label, atribute: .left,    toView: leftView, toAtribute: .left,  constant: self.config.defaultOffset).isActive = true
+        self.createConstraint(view: self.label, atribute: .left,    toView: leftView, toAtribute: leftAttribute,  constant: self.config.defaultOffset).isActive = true
     }
     
     //Get status bar height

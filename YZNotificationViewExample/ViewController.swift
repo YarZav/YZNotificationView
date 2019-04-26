@@ -62,12 +62,13 @@ class ViewController: UIViewController {
 extension ViewController {
     
     @objc private func showTopNotificationView() {
-        let notificationView = YZNotificationView(text: "Two line \ntext", image: nil, position: .topPosition)
+        let image = UIImage(named: "TestFaceIcon")
+        let notificationView = YZNotificationView(text: "Hi! \nI am top", image: image, position: .topPosition)
         self.notificationManager.showNotifiationView(notificationView)
     }
     
     @objc private func showBottomNotificationView() {
-        let notificationView = YZNotificationView(text: "Two line \ntext", image: nil, position: .bottomPosition)
+        let notificationView = YZNotificationView(text: "Hi! I am bottom", image: nil, position: .bottomPosition)
         self.notificationManager.showNotifiationView(notificationView)
     }
 }
