@@ -18,29 +18,29 @@ After that you need to create worker, it is a singleton
 
 And now you can show notificaion view on top
 
-**let text = "Hi! \nI am top"
-let notificationView = YZNotificationView(text: text, image: nil, position: .topPosition)
-notificationManager.showNotifiationView(notificationView)**
+**let text = "Hi! \nI am top"**
+**let notificationView = YZNotificationView(text: text, image: nil, position: .topPosition)**
+**notificationManager.showNotifiationView(notificationView)**
 
 Or on bottom
 
-**let text = "Hi! I am bottom"
-let notificationView = YZNotificationView(text: "Hi! I am bottom", image: nil, position: .bottomPosition)
-self.notificationManager.showNotifiationView(notificationView)**
+**let text = "Hi! I am bottom"**
+**let notificationView = YZNotificationView(text: "Hi! I am bottom", image: nil, position: .bottomPosition)**
+**notificationManager.showNotifiationView(notificationView)**
 
 Also it is full of customization
 
-**var config = YZNotificationViewConfig()
-config.imageViewBackgroundColor = .yellow
-config.textColor = .red
-config.textAlignment = .right
-config.textFont = UIFont.systemFont(ofSize: 17)
-config.isAutoClose = false
-config.animationDuration = TimeInterval(0.75)
-config.displayDuration = TimeInterval(1.75)
-config.defaultOffset = 10
-let notificationView = YZNotificationView(text: "Hi! I am bottom", image: nil, position: .bottomPosition, configuration: config)
-notificationManager.showNotifiationView(notificationView)**
+**var config = YZNotificationViewConfig()**
+**config.imageViewBackgroundColor = .yellow**
+**config.textColor = .red**
+**config.textAlignment = .right**
+**config.textFont = UIFont.systemFont(ofSize: 17)**
+**config.isAutoClose = false**
+**config.animationDuration = TimeInterval(0.75)**
+**config.displayDuration = TimeInterval(1.75)**
+**config.defaultOffset = 10**
+**let notificationView = YZNotificationView(text: "Hi! I am bottom", image: nil, position: .bottomPosition, configuration: config)**
+**notificationManager.showNotifiationView(notificationView)**
 
 Find the above displayed examples in the example.
 
