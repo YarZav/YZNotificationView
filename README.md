@@ -18,13 +18,15 @@ After that you need to create worker, it is a singleton
 
 And now you can show notificaion view on top
 
-**let notificationView = YZNotificationView(text: "Hi! \nI am top", image: nil, position: .topPosition)**
-**notificationManager.showNotifiationView(notificationView)**
+**let text = "Hi! \nI am top"
+let notificationView = YZNotificationView(text: text, image: nil, position: .topPosition)
+notificationManager.showNotifiationView(notificationView)**
 
 Or on bottom
 
-**let notificationView = YZNotificationView(text: "Hi! I am bottom", image: nil, position: .bottomPosition)** 
-**self.notificationManager.showNotifiationView(notificationView)**
+**let text = "Hi! I am bottom"
+let notificationView = YZNotificationView(text: "Hi! I am bottom", image: nil, position: .bottomPosition)
+self.notificationManager.showNotifiationView(notificationView)**
 
 Also it is full of customization
 
