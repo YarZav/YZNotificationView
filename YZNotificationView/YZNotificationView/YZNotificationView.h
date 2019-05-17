@@ -2,8 +2,8 @@
 //  YZNotificationView.h
 //  YZNotificationView
 //
-//  Created by Yaroslav Zavyalov on 25/03/2019.
-//  Copyright © 2019 Yaroslav Zavyalov. All rights reserved.
+//  Created by admin on 17/05/2019.
+//  Copyright © 2019 YZO. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

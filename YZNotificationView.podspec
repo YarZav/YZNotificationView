@@ -1,24 +1,25 @@
 Pod::Spec.new do |s|
 
-  s.name         = "YZNotificationView"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of YZNotificationView."
+   s.platform = :ios
+   s.ios.deployment_target = '11.0'
+   s.name = "YZNotificationView"
+   s.summary = "Short description of YZNotificationView."
+   s.requires_arc = true
 
-  s.description  = "This is UIView like a VK notification view"
+   s.version = "1.0.0"
 
-  s.homepage     = "https://bitbucket.org/YLincoln/yznotificationview/src/master/"
+   s.author = { "Yaroslav Zavyalov" => "yaroslavzavyalov1@gmail.com" }
 
-  s.license      = "MIT"
+   s.homepage = "https://github.com/YarZav/YZNotificationView"
 
-  s.author             = { "Yaroslav" => "yaroslavzavyalov1@gmail.com" }
+   s.source = { :git => "https://github.com/YarZav/YZNotificationView.git", :tag => "#{s.version}"}
 
-  s.platform     = :ios, "11.0"
+   s.framework = "UIKit"
 
-  s.source       = { :git => "https://github.com/YarZav/YZNotificationView.git", :tag => "1.0.0" }
+   s.source_files = "YZNotificationView/**/*.{swift}"
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
-
-  s.swift_version = "4.2"
-
+   s.resources = "YZNotificationView/**/*.{png,jpeg,jpg,storyboard,xib}"
+   s.resource_bundles = {
+      'YZNotificationView' => ['YZNotificationView/**/*.xcassets']
+   }
 end
