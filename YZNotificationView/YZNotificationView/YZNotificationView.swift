@@ -25,6 +25,7 @@ public enum YZNotificationViewType {
 
 // MARK: - YZNotificationViewConfig
 public struct YZNotificationViewConfig {
+    public var backgroundColor: UIColor = .darkGray
     public var imageViewBackgroundColor: UIColor = .white                   // imageView background color
     public var textColor: UIColor = .white                                  // text color
     public var textAlignment: NSTextAlignment = .left                       // text alignment
@@ -157,7 +158,7 @@ extension YZNotificationView {
     
     //Create view
     private func createSubViews() {
-        self.backgroundColor = .darkGray
+        self.backgroundColor = self.config.backgroundColor
         
         self.label = UILabel()
         self.label.numberOfLines = 0
