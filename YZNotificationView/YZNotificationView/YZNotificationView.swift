@@ -168,6 +168,7 @@ extension YZNotificationView {
         self.label.text = self.text
         
         self.imageView = UIImageView(image: self.image)
+        self.imageView.contentMode = .scaleAspectFill
         self.imageView.backgroundColor = self.config.imageViewBackgroundColor
         self.imageView.layer.masksToBounds = true
         self.imageView.layer.cornerRadius = (UINavigationController().navigationBar.frame.size.height - self.config.defaultOffset) / 2.0
