@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
    s.summary = "Short description of YZNotificationView."
    s.requires_arc = true
 
-   s.version = "1.0.0"
+   s.version = "1.1.0"
 
    s.author = { "Yaroslav Zavyalov" => "yaroslavzavyalov1@gmail.com" }
 
